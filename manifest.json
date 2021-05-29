@@ -5,7 +5,10 @@
   "manifest_version": 3,
   "content_scripts": [
     {
-      "matches": ["*://archiveofourown.org/works/new", "*://www.archiveofourown.org/works/new"],
+      "matches": ["*://archiveofourown.org/works/new",
+                  "*://www.archiveofourown.org/works/new",
+                  "*://archiveofourown.org/works/*/chapters/new",
+                  "*://www.archiveofourown.org/works/*/chapters/new"],
       "js": ["jquery.min.js", "post_new.js"]
     }
   ],

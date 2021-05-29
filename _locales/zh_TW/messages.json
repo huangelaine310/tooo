@@ -266,5 +266,45 @@
   "post": {
     "message": "發表",
     "description": "fieldset.create > legend| Post"
+  },
+  "nc_chapter_ordering": {
+    "message": "章節名稱、順序與日期",
+    "description": "fieldset#chapter-ordering > legend| Name, Order and Data"
+  },
+  "nc_chapter_title": {
+    "message": "章節標題",
+    "description": "label[for='chapter_title']| Chapter Title"
+  },
+  "nc_chapter_position": {
+    "message": "章節順序/數目",
+    "description": "label[for='chapter_position']| Chapter Number"
+  },
+  "nc_chapter_of": {
+    "message": "/共",
+    "description": "label[for='chapter_wip_length']| of"
+  },
+  "nc_chapter_published_at": {
+    "message": "章節發表日期",
+    "description": "label[for='chapter_published_at']| Chapter Publication Date"
+  },
+  "nc_chapter_preface": {
+    "message": "章節引言",
+    "description": "#new_chapter > fieldset:nth-child(5) > legend| Chapter Preface"
+  },
+  "nc_chapter_summary": {
+    "message": "章節簡介/概要",
+    "description": "label[for='chapter_summary']| Chapter Summary"
+  },
+  "nc_chapter_notes": {
+    "message": "章節註明",
+    "description": "#new_chapter > fieldset:nth-child(5) > dl > dt.notes| Chapter Notes"
+  },
+  "nc_chapter_text": {
+    "message": "章節內容*",
+    "description": "#new_chapter > fieldset.text > legend| Chapter Text*"
+  },
+  "nc_chapter_post": {
+    "message": "發表章節",
+    "description": "#new_chapter > fieldset:nth-child(7) > legend| Post Chapter"
   }
 }

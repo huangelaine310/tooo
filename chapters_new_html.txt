@@ -1,0 +1,33 @@
+div#chapter-form
+  form#new_chapter
+    p.required.notice ()
+    fieldset#chapter-ordering
+      legend (Name, Order and Date)
+      dl
+        dt
+          label[for='chapter_title'] (Chapter Title)
+          a
+        dd
+        dt
+          label[for='chapter_position'] (Chapter Number)
+        dd
+          input
+          label[for='chapter_wip_length'] (of)
+          input
+        dt#managePublicationDate
+          label[for='chapter_published_at'] (Chapter Publication Date)
+        dd.datetime
+    fieldset
+      #new_chapter > fieldset:nth-child(5) > legend (Chapter Preface)
+      dl
+        dt.byline.coauthors
+        dd.byline.coauthors
+        dt.summary
+          label[for='chapter_summary'] (Chapter Summary)
+        dd.summary
+        dt.notes (Chapter Notes)
+        dd.notes
+    fieldset.text
+      #new_chapter > fieldset.text > legend (Chapter Text*)
+    fieldset
+      #new_chapter > fieldset:nth-child(7) > legend (Post Chapter)
