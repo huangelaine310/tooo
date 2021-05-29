@@ -20,7 +20,8 @@ function iterateMessagesToTranslate(json) {
     const description = value['description'];
     const translated_str = value['message'];
     const selector = parseDescription(description);
-    $(selector).html(translated_str);
+    $(selector).contents().filter(function() {return this.nodeType == 3;})
+    .first().replaceWith(translated_str);
   });
 }
 

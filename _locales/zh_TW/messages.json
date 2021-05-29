@@ -1,7 +1,7 @@
 {
   "required": {
     "message": "*必填",
-    "description": "p.required.notice|* Required information"
+    "description": "p.required.notice| * Required information"
   },
   "tags": {
     "message": "標籤",
@@ -34,5 +34,237 @@
   "rating_explicit": {
     "message": "成人級",
     "description": "option[value='Explicit']| Explicit"
+  },
+  "archive_warning": {
+    "message": "AO3 警告*",
+    "description": "dt.warning.required > label| Warning"
+  },
+  "archive_warning_not_to_use": {
+    "message": "選擇不使用AO3警告",
+    "description": "label[for='work_archive_warning_strings_14']| Choose Not To Use Archive Warnings"
+  },
+  "archive_warning_graphic": {
+    "message": "激烈暴力描寫",
+    "description": "label[for='work_archive_warning_strings_17']| Graphic Depictions Of Violence"
+  },
+  "archive_warning_death": {
+    "message": "主要角色死亡",
+    "description": "label[for='work_archive_warning_strings_18']| Major Character Death"
+  },
+  "archive_warning_no": {
+    "message": "無適用的作品庫警告",
+    "description": "label[for='work_archive_warning_strings_16']| No Archive Warnings Apply"
+  },
+  "archive_warning_rape": {
+    "message": "強暴/非自願",
+    "description": "label[for='work_archive_warning_strings_19']| Rape/Non-Con"
+  },
+  "archive_warning_underage": {
+    "message": "未成年人性描寫",
+    "description": "label[for='work_archive_warning_strings_20']| Underage"
+  },
+  "fandom": {
+    "message": "同人圈*",
+    "description": "label[for='work_fandom_autocomplete']| Fandoms*"
+  },
+  "fandom_footnote": {
+    "message": "如果您創建了一個新的同人圈標籤，該標籤也許在幾天後才會出現在同人圈頁面上。",
+    "description": "dd.fandom.required > p.footnote| If this is the first work for a fandom, it may not show up in the fandoms page for a day or two."
+  },
+  "category": {
+    "message": "分類",
+    "description": "dt.category > label| Categories"
+  },
+  "category_FF": {
+    "message": "女/女",
+    "description": "label[for='work_category_string_116']| F/F"
+  },
+  "category_FM": {
+    "message": "男/女",
+    "description": "label[for='work_category_string_22']| F/M"
+  },
+  "category_Gen": {
+    "message": "正常向",
+    "description": "label[for='work_category_string_21']| Gen"
+  },
+  "category_MM": {
+    "message": "男/男",
+    "description": "label[for='work_category_string_23']| M/M"
+  },
+  "category_Multi": {
+    "message": "多種配對",
+    "description": "label[for='work_category_string_2246']| Multi"
+  },
+  "category_Other": {
+    "message": "其他",
+    "description": "label[for='work_category_string_24']| Other"
+  },
+  "relationship": {
+    "message": "配對",
+    "description": "label[for='work_relationship_autocomplete']| Relationships"
+  },
+  "character": {
+    "message": "角色",
+    "description": "label[for='work_character_autocomplete']| Characters"
+  },
+  "additional_tags": {
+    "message": "其他標籤",
+    "description": "label[for='work_freeform_autocomplete']| Additional Tags"
+  },
+  "preface": {
+    "message": "引語",
+    "description": "fieldset.preface > legend| Preface"
+  },
+  "work_title": {
+    "message": "作品標題*",
+    "description": "label[for='work_title']| Work Title*"
+  },
+  "add_co_creators": {
+    "message": "添加共同作者?",
+    "description": "label[for='co-authors-options-show']| Add co-creators?"
+  },
+  "summary": {
+    "message": "簡介概要",
+    "description": "label[for='work_summary']| Summary"
+  },
+  "notes": {
+    "message": "作者註明",
+    "description": "fieldset.preface > dl > dt.notes| Notes"
+  },
+  "notes_beginning": {
+    "message": "加在作品開頭",
+    "description": "label[for='front-notes-options-show']| at the beginning"
+  },
+  "notes_end": {
+    "message": "加在作品結尾",
+    "description": "label[for='end-notes-options-show']| at the end"
+  },
+  "associations": {
+    "message": "相關連結",
+    "description": "fieldset#associations > legend| Associations"
+  },
+  "post_to_collections_challenges": {
+    "message": "發布至同人作品集/挑戰賽",
+    "description": "label[for='work_collection_names_autocomplete']| Post to Collections / Challenges"
+  },
+  "gift_this_work_to": {
+    "message": "將此作品送給",
+    "description": "label[for='work_recipients_autocomplete']| Gift this work to"
+  },
+  "associations_parent": {
+    "message": "此作品是改編作品、翻譯、有聲小說或其靈感來自於另一作品",
+    "description": "label[for='parent-options-show']| This work is a remix, a translation, a podfic, or was inspired by another work"
+  },
+  "associations_parent_url_note": {
+    "message": "如果該作品發布在AO3上，您只需要填寫URL即可。",
+    "description": "p#parent-attributes-url-field-description| For a work in the Archive, only the URL is required."
+  },
+  "associations_parent_title": {
+    "message": "標題",
+    "description": "label[for='work_parent_attributes_title']| Title"
+  },
+  "associations_parent_author": {
+    "message": "作者",
+    "description": "label[for='work_parent_attributes_author']| Author"
+  },
+  "associations_parent_language": {
+    "message": "原作語言",
+    "description": "label[for='work_parent_attributes_language_id']| Language"
+  },
+  "associations_parent_translation": {
+    "message": "此作品是原作的翻譯版本",
+    "description": "label[for='work_parent_attributes_translation']| This is a translation"
+  },
+  "series": {
+    "message": "此作品屬於某系列的一部分",
+    "description": "label[for='series-options-show']| This work is part of a series"
+  },
+  "series_existing": {
+    "message": "從您現有的系列中選擇:",
+    "description": "label[for='work_series_attributes_id']| Choose one of your existing series:"
+  },
+  "series_new": {
+    "message": "或創建新系列:",
+    "description": "label[for='work_series_attributes_title']| Or create a new one:"
+  },
+  "chaptered": {
+    "message": "該作品包含多個章節",
+    "description": "label[for='chapters-options-show']| This work has multiple chapters"
+  },
+  "chaptered_wip_length": {
+    "message": "共＿章:",
+    "description": "label[for='work_wip_length']| Chapter 1 of"
+  },
+  "chaptered_wip_title": {
+    "message": "章節標題:",
+    "description": "label[for='work_chapter_attributes_title']| Chapter Title:"
+  },
+  "backdate_options": {
+    "message": "設定不同的發布日期",
+    "description": "label[for='backdate-options-show']| Set a different publication date"
+  },
+  "publication_date": {
+    "message": "設定發布日期",
+    "description": "label[for='published_at']| Set publication date"
+  },
+  "language": {
+    "message": "請選擇語言*",
+    "description": "label[for='work_language_id']| Choose a language*"
+  },
+  "work_skin": {
+    "message": "選擇作品介面",
+    "description": "label[for='work_work_skin_id']| Select Work Skin"
+  },
+  "skin_basic": {
+    "message": "基本格式介面",
+    "description": "dd.skin > select#work_work_skin_id > option[value='229']| Basic Formatting"
+  },
+  "skin_public": {
+    "message": "公共介面",
+    "description": "dd.skin > p.actions > a| Public Work Skins"
+  },
+  "privacy": {
+    "message": "隱私設定",
+    "description": "fieldset.privacy > legend| Privacy"
+  },
+  "privacy_restriced": {
+    "message": "只有註冊用戶能看您的作品",
+    "description": "label[for='work_restricted']| Only show your work to registered users"
+  },
+  "privacy_comments_moderated": {
+    "message": "開啟評論審核",
+    "description": "label[for='work_moderated_commenting_enabled']| Enable comment moderation"
+  },
+  "privacy_comments_permissions": {
+    "message": "誰可以發表評論",
+    "description": "dt.permissions.comments| Who can comment on this work"
+  },
+  "privacy_comments_permissions_all": {
+    "message": "所有人皆可發表評論",
+    "description": "label[for='work_comment_permissions_enable_all']| Registered users and guests can comment"
+  },
+  "privacy_comments_permissions_disable_anon": {
+    "message": "只有註冊用戶可以發表評論",
+    "description": "label[for='work_comment_permissions_disable_anon']| Only registered users can comment"
+  },
+  "privacy_comments_permissions_disable_all": {
+    "message": "關閉評論功能",
+    "description": "label[for='work_comment_permissions_disable_all']| No one can comment"
+  },
+  "work_text": {
+    "message": "作品內容*",
+    "description": "fieldset.work.text > legend| Work Text*"
+  },
+  "rich_text": {
+    "message": "文字編輯器",
+    "description": "a.rtf-link| Rich Text"
+  },
+  "rich_text_notes": {
+    "message": "輸入或貼上排版過的文字",
+    "description": "span.rtf-notes| Type or paste formatted text"
+  },
+  "post": {
+    "message": "發表",
+    "description": "fieldset.create > legend| Post"
   }
 }

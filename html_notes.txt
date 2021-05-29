@@ -15,7 +15,7 @@
           option[value="Mature"]
           option[value="Explicit"]
       dt.warning.required
-        label
+        label (Warnings*)
         a href="/help/warning-help.html"
       dd.warning.required
         fieldset.warnings
@@ -37,4 +37,177 @@
               label for="work_archive_warning_strings_19" (Rape/Non-Con)
             li
               input
-              label for="work_archive_warning_strings_18" (Underage)
+              label for="work_archive_warning_strings_20" (Underage)
+      dt.fandom.required
+        label[for='work_fandom_autocomplete'] (Fandoms*)
+        a href="/help/fandom-help.html"
+      dd.fandom.required
+        p.footnote (If this is the first work for a fandom, it may not show up in the fandoms page for a day or two.)
+      dt.category
+        label (Categories)
+        a href="/help/categories-help.html"
+      dd.category
+        fieldset
+          ul
+            li
+              input
+              label[for='work_category_string_116'] (F/F)
+            li
+              input
+              label[for='work_category_string_22'] (F/M)
+            li
+              input
+              label[for='work_category_string_21'] (Gen)
+            li
+              input
+              label[for='work_category_string_23'] (M/M)
+            li
+              input
+              label[for='work_category_string_2246'] (Multi)
+            li
+              input
+              label[for='work_category_string_24'] (Other)
+      dt.relationship
+        label[for='work_relationship_autocomplete'] (Relationships)
+        a href="/help/relationships-help.html"
+      dd.relationship
+      dt.character
+        label[for='work_character_autocomplete'] (Characters)
+        a href="/help/characters-help.html"
+      dd.character
+      dt.freeform
+        label[for='work_freeform_autocomplete'] (Additional Tags)
+        a href="/help/additional-tags-help.html"
+      dd.freeform
+  fieldset.preface
+    legend (Preface)
+    dl
+      dt.title.required
+        label[for='work_title'] (Work Title*)
+      dt.byline.coauthors
+        label[for='co-authors-options-show'] (Add co-creators?)
+      dt.summary
+        label[for='work_summary'] (Summary)
+      dt.notes (Notes)
+      dd.notes
+        ul
+          li.start
+            label[for='front-notes-options-show'] (at the beginning)
+          li.end
+            label[for='end-notes-options-show'] (at the end)
+  fieldset#associations
+    legend (Associations)
+    dl
+      dt.collection
+        label[for='work_collection_names_autocomplete'] (Post to Collections / Challenges)
+      dd.collection
+      dt.recipient
+        label[for='work_recipients_autocomplete'] (Gift this work to)
+      dd.recipient
+      dt.parent
+      dd.parent
+        label[for='parent-options-show'] (This work is a remix, a translation, a podfic, or was inspired by another work)
+        fieldset#parent-options
+          dl
+            dt
+              label[for='work_parent_attributes_url'] (URL)
+            dd
+              p#parent-attributes-url-field-description (For a work in the Archive, only the URL is required.)
+            dt
+              label[for='work_parent_attributes_title'] (Title)
+            dd
+            dt
+              label[for='work_parent_attributes_author'] (Author)
+            dd
+            dt
+              label[for='work_parent_attributes_language_id'] (Language)
+            dd
+            dt.translation
+            dd.translation
+              label[for='work_parent_attributes_translation'] (This is a translation)
+      dt.serial
+      dd.serial
+        label[for='series-options-show'] (This work is part of a series)
+        fieldset#series-options
+          dl
+            dt
+              label[for='work_series_attributes_id'] (Choose one of your existing series:)
+            dd
+            dt
+              label[for='work_series_attributes_title'] (Or create and use a new one:)
+            dd
+      dt.chaptered.wip
+      dd.chaptered.wip
+        label[for='chapters-options-show'] (This work has multiple chapters)
+        fieldset#chapters-options
+          dl
+            dt
+              label[for='work_wip_length'] (Chapter 1 of)
+            dd
+            dt
+              label[for='work_chapter_attributes_title'] (Chapter Title:)
+            dd
+      dt.backdate
+      dd.backdate
+        label[for='backdate-options-show'] (Set a different publication date)
+        fieldset#backdate-options
+          dl
+            dt
+              label[for='published_at'] (Set publication date)
+      dt.language.required
+        label[for='work_language_id'] (Choose a language*)
+      dd.language.required
+      dt.skin
+        label[for='work_work_skin_id'] (Select Work Skin)
+      dd.skin
+        select#work_work_skin_id
+          option[value='229'] (Basic Formatting)
+          option[value='277'] (Homestuck Skin)
+          option[value='74127'] (Undertale Work Skin)
+        p.actions
+          a (Public Work Skins)
+  fieldset.privacy
+    legend (Privacy)
+    dl
+      dt.restrict
+      dd.restrict
+        label[for='work_restricted'] (Only show your work to registered users)
+      dt.moderated.comments
+      dd.moderated.comments
+        label[for='work_moderated_commenting_enabled'] (Enable comment moderation)
+      dt.permissions.comments (Who can comment on this work)
+      dd.permissions.comments
+        fieldset
+          ul
+            li
+              label[for='work_comment_permissions_enable_all'] (Registered users and guests can comment)
+              input
+            li
+              label[for='work_comment_permissions_disable_anon'] (Only registered users can comment)
+              input
+            li
+              label[for='work_comment_permissions_disable_all'] (No one can comment)
+              input
+  fieldset.work.text
+    legend.required (Work Text*)
+    ul.rtf-html-switch.actions
+      li
+        a.rtf-link (Rich Text)
+      li
+        a.html-link (HTML)
+    p.rtf-html-instructions.note
+      span.html-notes (Plain text with limited HTML)
+        a href="/help/html-help.html"
+      span.rtf-notes (Type or paste formatted text)
+        a href="/help/rte-help.html"
+    p.notice
+    div.rtf-html-field
+  fieldset.create
+    legend (Post)
+    ul.actions
+      li
+        input[name='preview_button']
+      li
+        input[name='post_button']
+      li
+        input[name='cancel_button']
