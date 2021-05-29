@@ -1,0 +1,13 @@
+{
+  "name": "TOOO",
+  "description": "Translators of Our Own",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["*://archiveofourown.org/works/new", "*://www.archiveofourown.org/works/new"],
+      "js": ["jquery.min.js", "post_new.js"]
+    }
+  ],
+  "default_locale": "zh_TW"
+}

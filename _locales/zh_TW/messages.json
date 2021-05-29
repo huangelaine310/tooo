@@ -1,0 +1,6 @@
+{
+  "p_required_notice": {
+    "message": "*必填",
+    "description": "p.required.notice|* Required information"
+  }
+}
