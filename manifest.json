@@ -9,5 +9,11 @@
       "js": ["jquery.min.js", "post_new.js"]
     }
   ],
+  "web_accessible_resources": [
+    {
+      "resources": [ "*/messages.json" ],
+      "matches": ["<all_urls>"]
+    }
+  ],
   "default_locale": "zh_TW"
 }
