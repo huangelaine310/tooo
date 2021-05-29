@@ -16,13 +16,14 @@ function parseDescription(description) {
 
 /** iterates through messages.json objects and replaces with translation. */
 function iterateMessagesToTranslate(json) {
-  Object.values(json).forEach((value) => {
+  for (let key in json) {
+    const value = json[key];
     const description = value['description'];
     const translated_str = value['message'];
     const selector = parseDescription(description);
     $(selector).contents().filter(function() {return this.nodeType == 3;})
     .first().replaceWith(translated_str);
-  });
+  }
 }
 
 /** fetches the correct messaes.json according to language */
