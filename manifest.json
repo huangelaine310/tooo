@@ -18,5 +18,11 @@
       "matches": ["<all_urls>"]
     }
   ],
-  "default_locale": "zh_TW"
+  "default_locale": "zh_TW",
+  "icons":
+    {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
 }
