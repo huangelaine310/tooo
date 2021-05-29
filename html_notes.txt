@@ -1,2 +1,40 @@
 #work-form
-  
+  p.required.notice (* Required Information)
+  fieldset.work.meta
+    legend (TAGS)
+    p.note (Tags are comma separated, 100 characters per tag)
+    dl
+      dt.rating.required
+        label for=work_rating_string (Rating*)
+        a href="/help/rating-help.html"
+      dd.rating.required
+        select #work_rating_string
+          option[value="Not Rated"]
+          option[value="General Audiences"]
+          option[value="Teen And Up Audiences"]
+          option[value="Mature"]
+          option[value="Explicit"]
+      dt.warning.required
+        label
+        a href="/help/warning-help.html"
+      dd.warning.required
+        fieldset.warnings
+          ul
+            li
+              input
+              label for="work_archive_warning_strings_14" (Choose Not To Use Archive Warnings)
+            li
+              input
+              label for="work_archive_warning_strings_17" (Graphic Depictions Of Violence)
+            li
+              input
+              label for="work_archive_warning_strings_18" (Major Character Death)
+            li
+              input
+              label for="work_archive_warning_strings_16" (No Archive Warnings Apply)
+            li
+              input
+              label for="work_archive_warning_strings_19" (Rape/Non-Con)
+            li
+              input
+              label for="work_archive_warning_strings_18" (Underage)

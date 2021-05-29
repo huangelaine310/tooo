@@ -1,6 +1,38 @@
 {
-  "p_required_notice": {
+  "required": {
     "message": "*必填",
     "description": "p.required.notice|* Required information"
+  },
+  "tags": {
+    "message": "標籤",
+    "description": "fieldset.work.meta > legend| Tags"
+  },
+  "tags_heading_note": {
+    "message": "標籤之間請用逗點分開，一個標籤限100字元內",
+    "description": "fieldset.work.meta > p.note| Tags are comma separated, 100 characters per tag"
+  },
+  "rating": {
+    "message": "分級*",
+    "description": "label[for='work_rating_string']| Rating*"
+  },
+  "rating_not_rated": {
+    "message": "無分級",
+    "description": "option[value='Not Rated']| Not Rated"
+  },
+  "rating_general": {
+    "message": "普遍級",
+    "description": "option[value='General Audiences']| General Audiences"
+  },
+  "rating_teen": {
+    "message": "青少年以上",
+    "description": "option[value='Teen And Up Audiences']| Teen And Up Audiences"
+  },
+  "rating_mature": {
+    "message": "限制級",
+    "description": "option[value='Mature']| Mature"
+  },
+  "rating_explicit": {
+    "message": "成人級",
+    "description": "option[value='Explicit']| Explicit"
   }
 }
