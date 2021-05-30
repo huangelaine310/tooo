@@ -1,4 +1,20 @@
 {
+  "settings_method": {
+    "message": "顯示翻譯方式: ",
+    "description": "Translation Method: "
+  },
+  "settings_method_direct": {
+    "message": "直接於頁面上翻譯",
+    "description": "Directly replace text with translation"
+  },
+  "settings_method_tooltip": {
+    "message": "游標提示框",
+    "description": "Show translation as tooltip"
+  },
+  "settings_method_box": {
+    "message": "另開翻譯視窗框顯示",
+    "description": "Show translation in separate box"
+  },
   "required": {
     "message": "*必填",
     "description": "p.required.notice| * Required information"

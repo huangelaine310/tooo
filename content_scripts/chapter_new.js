@@ -26,8 +26,15 @@ const tooltip_selectors = [
   "fieldset.create > ul > li:nth-child(3) > input"
 ];
 
-// call translate function from util.js
-translate(selectors);
-
-// for translations that should use tooltips.
-addTooltipTranslation(tooltip_selectors);
+chrome.storage.sync.get('translate_method', (method) => {
+  method = method['translate_method'];
+  if (method == 'box') {
+    // TODO
+  } else if (method == 'tooltip') {
+    addTooltipTranslation(selectors.concat(tooltip_selectors));
+  } else {
+    //default - direct
+    translate(selectors);
+    addTooltipTranslation(tooltip_selectors);
+  }
+});
