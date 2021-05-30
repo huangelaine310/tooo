@@ -6,16 +6,19 @@
   "content_scripts": [
     {
       "matches": ["*://archiveofourown.org/works/new",
-                  "*://www.archiveofourown.org/works/new",
-                  "*://archiveofourown.org/works/*/chapters/new",
-                  "*://www.archiveofourown.org/works/*/chapters/new"],
-      "js": ["jquery.min.js", "post_new.js"]
-    }
-  ],
-  "web_accessible_resources": [
+                  "*://www.archiveofourown.org/works/new"],
+      "js": ["jquery.min.js",
+             "selector_to_name.js",
+             "util.js",
+             "content_scripts/work_new.js"]
+    },
     {
-      "resources": [ "*/messages.json" ],
-      "matches": ["<all_urls>"]
+      "matches": ["*://archiveofourown.org/works/*/chapters/new",
+                  "*://www.archiveofourown.org/works/*/chapters/new"],
+      "js": ["jquery.min.js",
+             "selector_to_name.js",
+             "util.js",
+             "content_scripts/chapter_new.js"]
     }
   ],
   "default_locale": "zh_TW",

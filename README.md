@@ -7,5 +7,10 @@ This is a chrome extension for translating the webpages of [AO3](https://archive
 ## Supported Languages
 Currently, only zh_TW (Traditional Chinese) is supported.
 
+If you'd like to help support another language, please feel free to contribute!
+
+## Contribution
+TODO
+
 ## Updates
 - May 29, 2021 - Supports translation of Post New Work and Post New Chapter pages to zh_TW.
