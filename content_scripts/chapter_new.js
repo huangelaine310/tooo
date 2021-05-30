@@ -20,5 +20,14 @@ const selectors = [
   "span.rtf-notes",
 ];
 
+const tooltip_selectors = [
+  "fieldset.create > ul > li:nth-child(1) > input",
+  "fieldset.create > ul > li:nth-child(2) > input",
+  "fieldset.create > ul > li:nth-child(3) > input"
+];
+
 // call translate function from util.js
 translate(selectors);
+
+// for translations that should use tooltips.
+addTooltipTranslation(tooltip_selectors);

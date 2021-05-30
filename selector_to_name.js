@@ -75,5 +75,8 @@ const selector_to_name_mapping = {
   "fieldset#associations > legend": "associations",
   "fieldset#chapter-ordering > legend": "nc_chapter_ordering",
   "dt.category > label": "category",
-  "label[for='chapters-options-show']": "chaptered"
+  "label[for='chapters-options-show']": "chaptered",
+  "fieldset.create > ul > li:nth-child(1) > input": "preview_button",
+  "fieldset.create > ul > li:nth-child(2) > input": "post_button",
+  "fieldset.create > ul > li:nth-child(3) > input": "cancel_button",
 };

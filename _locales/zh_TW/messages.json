@@ -306,5 +306,17 @@
   "nc_chapter_post": {
     "message": "發表章節",
     "description": "#new_chapter > fieldset:nth-child(7) > legend| Post Chapter"
+  },
+  "preview_button": {
+    "message": "預覽",
+    "description": "fieldset.create > ul > li:nth-child(1) > input| Preview"
+  },
+  "post_button": {
+    "message": "發表",
+    "description": "fieldset.create > ul > li:nth-child(2) > input| Post"
+  },
+  "cancel_button": {
+    "message": "取消",
+    "description": "fieldset.create > ul > li:nth-child(3) > input| Cancel"
   }
 }
