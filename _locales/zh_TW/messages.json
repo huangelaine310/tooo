@@ -100,7 +100,7 @@
     "description": "label[for='work_category_string_22']| F/M"
   },
   "category_Gen": {
-    "message": "正常向",
+    "message": "一般向",
     "description": "label[for='work_category_string_21']| Gen"
   },
   "category_MM": {
