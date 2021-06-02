@@ -26,15 +26,4 @@ const tooltip_selectors = [
   "fieldset:nth-child(7) > ul > li:nth-child(3) > input"
 ];
 
-chrome.storage.sync.get('translate_method', (method) => {
-  method = method['translate_method'];
-  if (method == 'box') {
-    addStickyDragBox(selectors.concat(tooltip_selectors));
-  } else if (method == 'tooltip') {
-    addTooltipTranslation(selectors.concat(tooltip_selectors));
-  } else {
-    //default - direct
-    translate(selectors);
-    addTooltipTranslation(tooltip_selectors);
-  }
-});
+translate(selectors, tooltip_selectors);

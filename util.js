@@ -100,3 +100,19 @@ function addStickyDragBox(selectors) {
     );
   }
 }
+
+/** Translates the selectors based on settings method. */
+function translate(selectors, tooltip_selectors) {
+  chrome.storage.sync.get('translate_method', (method) => {
+    method = method['translate_method'];
+    if (method == 'box') {
+      addStickyDragBox(selectors.concat(tooltip_selectors));
+    } else if (method == 'tooltip') {
+      addTooltipTranslation(selectors.concat(tooltip_selectors));
+    } else {
+      //default - direct
+      translate(selectors);
+      addTooltipTranslation(tooltip_selectors);
+    }
+  });
+}
