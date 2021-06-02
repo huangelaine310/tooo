@@ -7,6 +7,7 @@
     {
       "matches": ["*://archiveofourown.org/works/new",
                   "*://www.archiveofourown.org/works/new"],
+      "css": ["tooo.css"],
       "js": ["jquery.min.js",
              "selector_to_name.js",
              "util.js",
@@ -15,6 +16,7 @@
     {
       "matches": ["*://archiveofourown.org/works/*/chapters/new",
                   "*://www.archiveofourown.org/works/*/chapters/new"],
+      "css": ["tooo.css"],
       "js": ["jquery.min.js",
              "selector_to_name.js",
              "util.js",

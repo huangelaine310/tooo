@@ -79,4 +79,7 @@ const selector_to_name_mapping = {
   "fieldset.create > ul > li:nth-child(1) > input": "preview_button",
   "fieldset.create > ul > li:nth-child(2) > input": "post_button",
   "fieldset.create > ul > li:nth-child(3) > input": "cancel_button",
+  "fieldset:nth-child(7) > ul > li:nth-child(1) > input": "preview_button",
+  "fieldset:nth-child(7) > ul > li:nth-child(2) > input": "post_button",
+  "fieldset:nth-child(7) > ul > li:nth-child(3) > input": "cancel_button",
 };

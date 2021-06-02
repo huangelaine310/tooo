@@ -21,15 +21,15 @@ const selectors = [
 ];
 
 const tooltip_selectors = [
-  "fieldset.create > ul > li:nth-child(1) > input",
-  "fieldset.create > ul > li:nth-child(2) > input",
-  "fieldset.create > ul > li:nth-child(3) > input"
+  "fieldset:nth-child(7) > ul > li:nth-child(1) > input",
+  "fieldset:nth-child(7) > ul > li:nth-child(2) > input",
+  "fieldset:nth-child(7) > ul > li:nth-child(3) > input"
 ];
 
 chrome.storage.sync.get('translate_method', (method) => {
   method = method['translate_method'];
   if (method == 'box') {
-    // TODO
+    addStickyDragBox(selectors.concat(tooltip_selectors));
   } else if (method == 'tooltip') {
     addTooltipTranslation(selectors.concat(tooltip_selectors));
   } else {

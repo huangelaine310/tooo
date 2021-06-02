@@ -1,0 +1,27 @@
+#sticky_box {
+    position: fixed;
+    z-index: 9;
+    background-color: #f1f1f1;
+    text-align: center;
+
+    border: 1px solid;
+    border-radius: 5px;
+    width:120px;
+    height:80px;
+    padding: 10px;
+    cursor: move;
+    bottom:60px;
+    left:60px;
+
+    overflow: auto;
+    resize: both;
+}
+
+#sticky_box_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  resize: inherit;
+}
