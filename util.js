@@ -78,13 +78,21 @@ function dragElement(elmnt) {
 }
 
 /** Add sticky box to show translation. */
-function addStickyDragBox(selectors) {
+function addStickyDragBox(selectors, select_selectors) {
   // create sticky box
   let box = $('<div>', {id: 'sticky_box'});
   let box_text = $('<div>', {id: 'sticky_box_text'});
   box.append(box_text);
   $('#main').append(box);
   dragElement(document.getElementById('sticky_box'));
+
+  // for html select elemsnts, must include size for hover to work.
+  for (const [selector, size] of Object.entries(select_selectors)) {
+    $(selector).hover(
+      () => $(selector).attr('size', size),
+      () => $(selector).removeAttr('size')
+    );
+  }
 
   // on hover, show translation
   for (const selector of selectors) {
@@ -102,11 +110,11 @@ function addStickyDragBox(selectors) {
 }
 
 /** Translates the selectors based on settings method. */
-function translate(selectors, tooltip_selectors) {
+function translate(selectors=[], tooltip_selectors=[], select_selectors={}) {
   chrome.storage.sync.get('translate_method', (method) => {
     method = method['translate_method'];
     if (method == 'box') {
-      addStickyDragBox(selectors.concat(tooltip_selectors));
+      addStickyDragBox(selectors.concat(tooltip_selectors), select_selectors);
     } else if (method == 'tooltip') {
       addTooltipTranslation(selectors.concat(tooltip_selectors));
     } else {

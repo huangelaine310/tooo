@@ -77,4 +77,10 @@ const tooltip_selectors = [
   "fieldset.create > ul > li:nth-child(3) > input"
 ];
 
-translate(selectors, tooltip_selectors);
+/** hovers don't work for select options; must include size of select for
+    jquery to handle hover events. */
+const select_selectors = {
+  "#work_rating_string": 4,
+};
+
+translate(selectors, tooltip_selectors, select_selectors);
