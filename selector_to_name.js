@@ -150,5 +150,6 @@ const selector_to_name_mapping = {
   "option[value='bookmarks_count']": "bookmarks_count",
   "label[for='work_search_sort_direction']": "sort_direction",
   "option[value='asc']": "ascending",
-  "option[value='desc']": "descending"
+  "option[value='desc']": "descending",
+  "#main > ul > li > a[href^='/works/search']": "edit_search",
 };

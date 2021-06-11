@@ -490,5 +490,9 @@
   "descending": {
     "message": "遞降",
     "description": "option[value='desc']| Descending"
+  },
+  "edit_search": {
+    "message": "編輯你的搜尋",
+    "description": "#main > ul > li > a[href^='/works/search']| Edit Your Search"
   }
 }

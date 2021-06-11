@@ -23,8 +23,8 @@
              "content_scripts/chapter_new.js"]
     },
     {
-      "matches": ["*://archiveofourown.org/works/search",
-                  "*://www.archiveofourown.org/works/search"],
+      "matches": ["*://archiveofourown.org/works/search*",
+                  "*://www.archiveofourown.org/works/search*"],
       "css": ["tooo.css"],
       "js": ["jquery.min.js",
              "selector_to_name.js",

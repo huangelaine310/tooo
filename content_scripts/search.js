@@ -68,6 +68,7 @@ const selectors = [
   "label[for='work_search_sort_direction']",
   "option[value='asc']",
   "option[value='desc']",
+  "#main > ul > li > a[href^='/works/search']"
 ];
 
 const tooltip_selectors = [
