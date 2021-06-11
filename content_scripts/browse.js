@@ -27,6 +27,33 @@ const selectors = [
   "#main > div.navigation.actions.module > ul > li:nth-child(1) > span",
   "#main > div.navigation.actions.module > ul > li:nth-child(2) > a",
   "dt.include > h4.heading",
+  "label[for='work_search_other_tag_names_autocomplete']",
+  "dt.exclude > h4.heading",
+  "label[for='work_search_excluded_tag_names_autocomplete']",
+  "dt.more > h4.heading",
+  "label[for='work_search_words_from']",
+  "label[for='work_search_words_to']",
+  "label[for='work_search_date_from']",
+  "label[for='work_search_date_to']",
+  "label[for='bookmark_search_sort_column']",
+  "option[value='bookmarkable_date']",
+  "label[for='bookmark_search_other_tag_names_autocomplete']",
+  "label[for='bookmark_search_other_bookmark_tag_names_autocomplete']",
+  "label[for='bookmark_search_excluded_tag_names_autocomplete']",
+  "label[for='bookmark_search_excluded_bookmark_tag_names_autocomplete']",
+  "label[for='bookmark_search_bookmarkable_query']",
+  "label[for='bookmark_search_bookmark_query']",
+  "label[for='bookmark_search_language_id']",
+  "#bookmark-filters > fieldset > dl > dd.more.group > dl > dt.options",
+  "#bookmark-filters > fieldset > dl > dd.more.group > dl > dd.options > ul > li:nth-child(1) > label > span:nth-child(4)",
+  "#bookmark-filters > fieldset > dl > dd.more.group > dl > dd.options > ul > li:nth-child(2) > label > span:nth-child(4)",
+  "#go_to_filters",
+  "#main > ul > li:nth-child(2) > span",
+  "#main > ul > li:nth-child(1) > a",
+];
+
+/** selectors that should replace the last text node. */
+const select_last = [
   "dt.filter-toggle.rating > button",
   "dt.filter-toggle.warning > button",
   "dt.filter-toggle.category > button",
@@ -34,19 +61,12 @@ const selectors = [
   "dt.filter-toggle.character > button",
   "dt.filter-toggle.relationship > button",
   "dt.filter-toggle.freeform > button",
-  "label[for='work_search_other_tag_names_autocomplete']",
-  "dt.exclude > h4.heading",
-  "label[for='work_search_excluded_tag_names_autocomplete']",
-  "dt.more > h4.heading",
   "dt#toggle_work_crossover > button",
   "dt#toggle_work_complete > button",
   "dt#toggle_work_words > button",
-  "label[for='work_search_words_from']",
-  "label[for='work_search_words_to']",
   "dt#toggle_work_dates > button",
-  "label[for='work_search_date_from']",
-  "label[for='work_search_date_to']",
-];
+  "dt.filter-toggle.tag.tags > button",
+]
 
 const tooltip_selectors = [
   "input[value='Favorite Tag']",
@@ -57,6 +77,7 @@ const tooltip_selectors = [
     jquery to handle hover events. */
 const select_selectors = {
   "#work_search_sort_column": 9,
+  "#bookmark_search_sort_column": 2,
 };
 
 /** Selectors that only translate part of the string. */
@@ -80,4 +101,4 @@ const partial_translate_selectors = [
   "dd.warning.tags > ul > li:nth-child(6) > label > span:nth-child(3)",
 ];
 
-translate(selectors, tooltip_selectors, select_selectors, partial_translate_selectors);
+translate(selectors, tooltip_selectors, select_selectors, partial_translate_selectors, select_last);

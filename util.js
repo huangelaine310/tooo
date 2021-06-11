@@ -22,6 +22,17 @@ function translate_direct(selectors) {
   }
 }
 
+/** Translates the given selctors. */
+function translate_last(selectors) {
+  for (const selector of selectors) {
+    const translation = getMessage(selector);
+    $(selector).each(function(index) {
+      $(this).contents().filter(function() {return this.nodeType == 3;})
+      .last().replaceWith(translation);
+    });
+  }
+}
+
 /** Add tool tip with translation. */
 function addTooltipTranslation(selectors) {
   for (const selector of selectors) {
@@ -127,16 +138,17 @@ function translate_partial(selectors, stopChar='(') {
 }
 
 /** Translates the selectors based on settings method. */
-function translate(selectors=[], tooltip_selectors=[], select_selectors={}, partial_selectors=[]) {
+function translate(selectors=[], tooltip_selectors=[], select_selectors={}, partial_selectors=[], last_selectors=[]) {
   chrome.storage.sync.get('translate_method', (method) => {
     method = method['translate_method'];
     if (method == 'box') {
-      addStickyDragBox(selectors.concat(tooltip_selectors).concat(partial_selectors), select_selectors);
+      addStickyDragBox(selectors.concat(tooltip_selectors).concat(partial_selectors).concat(last_selectors), select_selectors);
     } else if (method == 'tooltip') {
-      addTooltipTranslation(selectors.concat(tooltip_selectors).concat(partial_selectors));
+      addTooltipTranslation(selectors.concat(tooltip_selectors).concat(partial_selectors).concat(last_selectors));
     } else {
       //default - direct
       translate_direct(selectors);
+      translate_last(last_selectors);
       addTooltipTranslation(tooltip_selectors);
       translate_partial(partial_selectors);
     }

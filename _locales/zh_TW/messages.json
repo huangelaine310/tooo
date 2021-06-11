@@ -546,5 +546,53 @@
   "date_updated_to": {
     "message": "到",
     "description": "label[for='work_search_date_to']| To"
+  },
+  "bookmarker_tag": {
+    "message": "書籤收藏者的標籤",
+    "description": "dt.filter-toggle.tag.tags > button| Bookmarker's Tags"
+  },
+  "other_work_tags_include": {
+    "message": "其他該包含的原作標籤",
+    "description": "label[for='bookmark_search_other_tag_names_autocomplete']| Other work tags to include"
+  },
+  "other_bookmarker_tags_include": {
+    "message": "其他該包含的書籤標籤",
+    "description": "label[for='bookmark_search_other_bookmark_tag_names_autocomplete']| Other bookmarker's tags to include"
+  },
+  "other_work_tags_exclude": {
+    "message": "其他該排除的原作標籤",
+    "description": "label[for='bookmark_search_excluded_tag_names_autocomplete']| Other work tags to exclude"
+  },
+  "other_bookmarker_tags_exclude": {
+    "message": "其他該排除的書籤標籤",
+    "description": "label[for='bookmark_search_excluded_bookmark_tag_names_autocomplete']| Other bookmarker's tags to exclude"
+  },
+  "search_within_results": {
+    "message": "在搜尋結果裡尋找",
+    "description": "label[for='bookmark_search_bookmarkable_query']| Search within results"
+  },
+  "search_bookmarkers_tags_and_notes": {
+    "message": "在書籤的標籤和筆記裡尋找",
+    "description": "label[for='bookmark_search_bookmark_query']| Search bookmarker's tags and notes"
+  },
+  "work_language": {
+    "message": "作品語言",
+    "description": "label[for='bookmark_search_language_id']| Work Language"
+  },
+  "bookmark_types": {
+    "message": "書籤類別",
+    "description": "#bookmark-filters > fieldset > dl > dd.more.group > dl > dt.options| Bookmark types"
+  },
+  "recs_only": {
+    "message": "只包含推薦類書籤",
+    "description": "#bookmark-filters > fieldset > dl > dd.more.group > dl > dd.options > ul > li:nth-child(1) > label > span:nth-child(4)| Recs only"
+  },
+  "only_bookmarks_with_notes": {
+    "message": "只包含有註記的書籤",
+    "description": "#bookmark-filters > fieldset > dl > dd.more.group > dl > dd.options > ul > li:nth-child(2) > label > span:nth-child(4)| Only bookmarks with notes"
+  },
+  "filters": {
+    "message": "篩選",
+    "description": "#go_to_filters| Filters"
   }
 }
