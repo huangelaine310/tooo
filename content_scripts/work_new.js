@@ -80,7 +80,7 @@ const tooltip_selectors = [
 /** hovers don't work for select options; must include size of select for
     jquery to handle hover events. */
 const select_selectors = {
-  "#work_rating_string": 4,
+  "#work_rating_string": 5,
 };
 
 translate(selectors, tooltip_selectors, select_selectors);

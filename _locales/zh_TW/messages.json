@@ -1,19 +1,19 @@
 {
   "settings_method": {
     "message": "顯示翻譯方式: ",
-    "description": "Translation Method: "
+    "description": "| Translation Method: "
   },
   "settings_method_direct": {
     "message": "直接於頁面上翻譯",
-    "description": "Directly replace text with translation"
+    "description": "| Directly replace text with translation"
   },
   "settings_method_tooltip": {
     "message": "游標提示框",
-    "description": "Show translation as tooltip"
+    "description": "| Show translation as tooltip"
   },
   "settings_method_box": {
     "message": "另開翻譯視窗框顯示",
-    "description": "Show translation in separate box"
+    "description": "| Show translation in separate box"
   },
   "required": {
     "message": "*必填",
@@ -179,7 +179,7 @@
     "message": "標題",
     "description": "label[for='work_parent_attributes_title']| Title"
   },
-  "associations_parent_author": {
+  "author": {
     "message": "作者",
     "description": "label[for='work_parent_attributes_author']| Author"
   },
@@ -334,5 +334,161 @@
   "cancel_button": {
     "message": "取消",
     "description": "fieldset.create > ul > li:nth-child(3) > input| Cancel"
+  },
+  "work_search": {
+    "message": "搜尋作品",
+    "description": "#main > h2.heading| Work Search"
+  },
+  "ws_nav_work_search": {
+    "message": "搜尋作品",
+    "description": "#main > ul > li:nth-child(1) > span| Work Search"
+  },
+  "ws_nav_people_search": {
+    "message": "搜尋使用者",
+    "description": "#main > ul > li:nth-child(2) > a| People Search"
+  },
+  "ws_nav_bookmark_search": {
+    "message": "搜尋書籤",
+    "description": "#main > ul > li:nth-child(3) > a| Bookmark Search"
+  },
+  "ws_nav_tag_search": {
+    "message": "搜尋標籤",
+    "description": "#main > ul > li:nth-child(4) > a| Tag Search"
+  },
+  "work_info": {
+    "message": "作品資訊",
+    "description": "#new_work_search > fieldset:nth-child(2) > legend| Work Info"
+  },
+  "search": {
+    "message": "搜尋",
+    "description": "input[value='Search']| Search"
+  },
+  "ws_any_field": {
+    "message": "任何欄位",
+    "description": "label[for='work_search_query']| Any Field"
+  },
+  "ws_title": {
+    "message": "作品標題",
+    "description": "label[for='work_search_title']| Title"
+  },
+  "ws_creators": {
+    "message": "作家/繪者",
+    "description": "label[for='work_search_creators']| Author/Artist"
+  },
+  "ws_date": {
+    "message": "日期",
+    "description": "label[for='work_search_revised_at']| Date"
+  },
+  "ws_completion": {
+    "message": "完結狀態",
+    "description": "#new_work_search > fieldset:nth-child(2) > dl > dt:nth-child(9)| Completion Status"
+  },
+  "ws_completion_any": {
+    "message": "包含所有作品",
+    "description": "label[for='work_search_complete_']| All works"
+  },
+  "ws_completion_true": {
+    "message": "只包含完結作品",
+    "description": "label[for='work_search_complete_t']| Complete works only"
+  },
+  "ws_completion_false": {
+    "message": "只包含未完結作品",
+    "description": "label[for='work_search_complete_f']| Works in progress only"
+  },
+  "ws_crossovers": {
+    "message": "混合同人",
+    "description": "#new_work_search > fieldset:nth-child(2) > dl > dt:nth-child(11)| Crossovers"
+  },
+  "ws_crossovers_include": {
+    "message": "包含混合同人",
+    "description": "label[for='work_search_crossover_']| Include crossovers"
+  },
+  "ws_crossovers_exclude": {
+    "message": "不包含混合同人",
+    "description": "label[for='work_search_crossover_f']| Exclude crossovers"
+  },
+  "ws_crossovers_only": {
+    "message": "只包含混合同人",
+    "description": "label[for='work_search_crossover_t']| Only crossovers"
+  },
+  "ws_single_chapter": {
+    "message": "單一章節",
+    "description": "label[for='work_search_single_chapter']| Single Chapter"
+  },
+  "ws_word_count": {
+    "message": "字數統計",
+    "description": "label[for='work_search_word_count']| Word Count"
+  },
+  "ws_language": {
+    "message": "語言",
+    "description": "label[for='work_search_language_id']| Language"
+  },
+  "ws_work_tags": {
+    "message": "作品標籤",
+    "description": "#new_work_search > fieldset:nth-child(3) > legend| Work Tags"
+  },
+  "ws_fandoms": {
+    "message": "同人圈",
+    "description": "label[for='work_search_fandom_names_autocomplete']| Fandoms"
+  },
+  "ws_rating": {
+    "message": "分級",
+    "description": "label[for='work_search_rating_ids']| Rating"
+  },
+  "ws_warnings": {
+    "message": "警告",
+    "description": "#new_work_search > fieldset:nth-child(3) > dl > dt:nth-child(5)| Warnings"
+  },
+  "creator_chose_not_archive_warnings": {
+    "message": "創作者選擇不使用AO3警告",
+    "description": "label[for='warning_14']| Creator Chose Not To Use Archive Warnings"
+  },
+  "work_stats": {
+    "message": "作品數據",
+    "description": "#new_work_search > fieldset:nth-child(4) > legend| Work Stats"
+  },
+  "hits_count": {
+    "message": "點擊數",
+    "description": "label[for='work_search_hits']| Hits"
+  },
+  "kudos_count": {
+    "message": "按讚數",
+    "description": "label[for='work_search_kudos_count']| Kudos"
+  },
+  "comments_count": {
+    "message": "留言數",
+    "description": "label[for='work_search_comments_count']| Comments"
+  },
+  "bookmarks_count": {
+    "message": "書籤數",
+    "description": "label[for='work_search_bookmarks_count']| Bookmarks"
+  },
+  "sort_by": {
+    "message": "排列依據",
+    "description": "label[for='work_search_sort_column']| Sort by"
+  },
+  "best_match": {
+    "message": "最相近結果",
+    "description": "option[value='_score']| Best Match"
+  },
+  "date_posted": {
+    "message": "發表日期",
+    "description": "option[value='created_at']| Date Posted"
+  },
+  "date_updated": {
+    "message": "更新日期",
+    "description": "option[value='revised_at']| Date Updated"
+  },
+  "sort_direction": {
+    "message": "排列順序",
+    "description": "label[for='work_search_sort_direction']| Sort Direction"
+  },
+  "ascending": {
+    "message": "遞升",
+    "description": "option[value='asc']| Ascending"
+  },
+  "descending": {
+    "message": "遞降",
+    "description": "option[value='desc']| Descending"
   }
 }

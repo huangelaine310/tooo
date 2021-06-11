@@ -1,0 +1,148 @@
+#main
+  h2.heading (Work Search)
+  ul.navigation.actions
+    li:nth-child(1)
+      span.current (Work Search)
+    li:nth-child(2)
+      a (People Search)
+    li:nth-child(3)
+      a (Bookmark Search)
+    li:nth-child(4)
+      a (Tag Search)
+  form.verbose.search #new_work_search
+    fieldset
+      legend (Work Info)
+      p.submit
+        input[name='commit', value='Search']
+      dl
+        dt
+          label[for='work_search_query'] (Any Field)
+        dd
+        dt
+          label[for='work_search_title'] (Title)
+        dd
+        dt
+          label[for='work_search_creators'] (Author/Artist)
+        dd
+        dt
+          label[for='work_search_revised_at'] (Date)
+        dd
+        dt #new_work_search > fieldset:nth-child(2) > dl > dt:nth-child(9) (Completion Status)
+        dd
+          ul
+            li
+              label[for='work_search_complete_'] (All works)
+            li
+              label[for='work_search_complete_t'] (Complete works only)
+            li
+              label[for='work_search_complete_f'] (Works in progress only)
+        dt #new_work_search > fieldset:nth-child(2) > dl > dt:nth-child(11) (Crossovers)
+        dd
+          ul
+            li
+              label[for='work_search_crossover_'] (Include crossovers)
+            li
+              label[for='work_search_crossover_f'] (Exclude crossovers)
+            li
+              label[for='work_search_crossover_t'] (Only crossovers)
+        dt
+          label[for='work_search_single_chapter'] (Single Chapter)
+        dd
+        dt
+          label[for='work_search_word_count'] (Work Count)
+        dd
+        dt
+          label[for='work_search_language_id'] (Language)
+        dd
+    fieldset
+      legend #new_work_search > fieldset:nth-child(3) > legend (Work Tags)
+      dl
+        dt
+          label[for='work_search_fandom_names_autocomplete'] (Fandoms)
+        dd
+        dt
+          label[for='work_search_rating_ids'] (Rating)
+        dd
+          select#work_search_rating_ids
+            option[value='9'] (Not Rated)
+            option[value='10'] (General Audiences)
+            option[value='11'] (Teen And Up Audiences)
+            option[value='12'] (Mature)
+            option[value='13'] (Explicit)
+        dt #new_work_search > fieldset:nth-child(3) > dl > dt:nth-child(5) (Warnings)
+        dd
+          ul
+            li
+              label[for='warning_14'] (Creator Chose Not To Use Archive Warnings)
+            li
+              label[for='warning_17'] (Graphic Depictions Of Violence)
+            li
+              label[for='warning_18'] (Major Character Death)
+            li
+              label[for='warning_16'] (No Archive Warnings Apply)
+            li
+              label[for='warning_19'] (Rape/Non-Con)
+            li
+              label[for='warning_20'] (Underage)
+        dt #new_work_search > fieldset:nth-child(3) > dl > dt:nth-child(7) (Categories)
+        dd
+          ul
+            li
+              label[for='category_116'] (F/F)
+            li
+              label[for='category_22'] (F/M)
+            li
+              label[for='category_21'] (Gen)
+            li
+              label[for='category_23'] (M/M)
+            li
+              label[for='category_2246'] (Multi)
+            li
+              label[for='category_24'] (Other)
+        dt
+          label[for='work_search_character_names_autocomplete'] (Characters)
+        dd
+        dt
+          label[for='work_search_relationship_names_autocomplete'] (Relationships)
+        dd
+        dt
+          label[for='work_search_freeform_names_autocomplete'] (Additional Tags)
+        dd
+    fieldset
+      legend #new_work_search > fieldset:nth-child(4) > legend (Work Stats)
+      dl
+        dt
+          label[for='work_search_hits'] (Hits)
+        dd
+        dt
+          label[for='work_search_kudos_count'] (Kudos)
+        dd
+        dt
+          label[for='work_search_comments_count'] (Comments)
+        dd
+        dt
+          label[for='work_search_bookmarks_count'] (Bookmarks)
+        dd
+    fieldset
+      legend #new_work_search > fieldset:nth-child(5) > legend (Search)
+      dl
+        dt
+          label[for='work_search_sort_column'] (Sort by)
+        dd
+          select#work_search_sort_column
+            option[value='_score'] (Best Match)
+            option[value='authors_to_sort_on'] (Author)
+            option[value='title_to_sort_on'] (Title)
+            option[value='created_at'] (Date Posted)
+            option[value='revised_at'] (Date Updated)
+            option[value='word_count'] (Word Count)
+            option[value='hits'] (Hits)
+            option[value='kudos_count'] (Kudos)
+            option[value='comments_count'] (Comments)
+            option[value='bookmarks_count'] (Bookmarks)
+        dt
+          label[for='work_search_sort_direction'] (Sort direction)
+        dd
+          select#work_search_sort_direction
+            option[value='asc'] (Ascending)
+            option[value='desc'] (Descending)

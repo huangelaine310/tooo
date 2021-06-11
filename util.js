@@ -10,7 +10,7 @@ function getMessage(selector) {
 }
 
 /** Translates the given selctors. */
-function translate(selectors) {
+function translate_direct(selectors) {
   for (const selector of selectors) {
     const translation = getMessage(selector);
     $(selector).contents().filter(function() {return this.nodeType == 3;})
@@ -86,7 +86,7 @@ function addStickyDragBox(selectors, select_selectors) {
   $('#main').append(box);
   dragElement(document.getElementById('sticky_box'));
 
-  // for html select elemsnts, must include size for hover to work.
+  // for html select elements, must include size for hover to work.
   for (const [selector, size] of Object.entries(select_selectors)) {
     $(selector).hover(
       () => $(selector).attr('size', size),
@@ -119,7 +119,7 @@ function translate(selectors=[], tooltip_selectors=[], select_selectors={}) {
       addTooltipTranslation(selectors.concat(tooltip_selectors));
     } else {
       //default - direct
-      translate(selectors);
+      translate_direct(selectors);
       addTooltipTranslation(tooltip_selectors);
     }
   });
