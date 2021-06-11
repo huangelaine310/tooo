@@ -5,6 +5,8 @@ function getMessage(selector) {
   try {
     return i18n.getMessage(selector_to_name_mapping[selector]);
   } catch(e) {
+    console.log(selector)
+    console.log(selector_to_name_mapping[selector])
     console.log(e);
   }
 }
@@ -13,8 +15,10 @@ function getMessage(selector) {
 function translate_direct(selectors) {
   for (const selector of selectors) {
     const translation = getMessage(selector);
-    $(selector).contents().filter(function() {return this.nodeType == 3;})
-    .first().replaceWith(translation);
+    $(selector).each(function(index) {
+      $(this).contents().filter(function() {return this.nodeType == 3;})
+      .first().replaceWith(translation);
+    });
   }
 }
 
@@ -109,18 +113,32 @@ function addStickyDragBox(selectors, select_selectors) {
   }
 }
 
+function translate_partial(selectors, stopChar='(') {
+  for (const selector of selectors) {
+    $(selector).each(function(index) {
+      const originalText = $(this).text();
+      const stopCharIndex = originalText.indexOf(stopChar);
+      const textToKeep = ' ' + originalText.substring(stopCharIndex);
+      const translation = getMessage(selector);
+      $(this).contents().filter(function() {return this.nodeType == 3;})
+      .first().replaceWith(translation+textToKeep);
+    });
+  }
+}
+
 /** Translates the selectors based on settings method. */
-function translate(selectors=[], tooltip_selectors=[], select_selectors={}) {
+function translate(selectors=[], tooltip_selectors=[], select_selectors={}, partial_selectors=[]) {
   chrome.storage.sync.get('translate_method', (method) => {
     method = method['translate_method'];
     if (method == 'box') {
-      addStickyDragBox(selectors.concat(tooltip_selectors), select_selectors);
+      addStickyDragBox(selectors.concat(tooltip_selectors).concat(partial_selectors), select_selectors);
     } else if (method == 'tooltip') {
-      addTooltipTranslation(selectors.concat(tooltip_selectors));
+      addTooltipTranslation(selectors.concat(tooltip_selectors).concat(partial_selectors));
     } else {
       //default - direct
       translate_direct(selectors);
       addTooltipTranslation(tooltip_selectors);
+      translate_partial(partial_selectors);
     }
   });
 }

@@ -68,7 +68,7 @@
     "description": "label[for='work_archive_warning_strings_18']| Major Character Death"
   },
   "archive_warning_no": {
-    "message": "無適用的作品庫警告",
+    "message": "無適用的AO3警告",
     "description": "label[for='work_archive_warning_strings_16']| No Archive Warnings Apply"
   },
   "archive_warning_rape": {
@@ -494,5 +494,57 @@
   "edit_search": {
     "message": "編輯你的搜尋",
     "description": "#main > ul > li > a[href^='/works/search']| Edit Your Search"
+  },
+  "works": {
+    "message": "作品",
+    "description": "#main > div.navigation.actions.module > ul > li:nth-child(1) > span| Works"
+  },
+  "bookmarks": {
+    "message": "書籤",
+    "description": "#main > div.navigation.actions.module > ul > li:nth-child(2) > a| Bookmarks"
+  },
+  "favorite_tag": {
+    "message": "加入喜愛標籤",
+    "description": "input[value='Favorite Tag']| Favorite Tag"
+  },
+  "sort_and_filter": {
+    "message": "篩選並排序",
+    "description": "input[value='Sort and Filter']| Sort and Filter"
+  },
+  "include": {
+    "message": "包含",
+    "description": "dt.include > h4.heading| Include"
+  },
+  "other_tags_include": {
+    "message": "其他該包含的標籤",
+    "description": "label[for='work_search_other_tag_names_autocomplete']| Other tags to include"
+  },
+  "exclude": {
+    "message": "排除",
+    "description": "dt.exclude > h4.heading| Exclude"
+  },
+  "other_tags_exclude": {
+    "message": "其他該排除的標籤",
+    "description": "label[for='work_search_excluded_tag_names_autocomplete']| Other tags to exclude"
+  },
+  "more_options": {
+    "message": "其他選項",
+    "description": "dt.more > h4.heading| More Options"
+  },
+  "word_count_from": {
+    "message": "至少",
+    "description": "label[for='work_search_words_from']| From"
+  },
+  "word_count_to": {
+    "message": "至多",
+    "description": "label[for='work_search_words_to']| To"
+  },
+  "date_updated_from": {
+    "message": "從",
+    "description": "label[for='work_search_date_from']| From"
+  },
+  "date_updated_to": {
+    "message": "到",
+    "description": "label[for='work_search_date_to']| To"
   }
 }

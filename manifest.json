@@ -30,6 +30,17 @@
              "selector_to_name.js",
              "util.js",
              "content_scripts/search.js"]
+    },
+    {
+      "matches": ["*://archiveofourown.org/tags/*/works",
+                  "*://www.archiveofourown.org/tags/*/works",
+                  "*://archiveofourown.org/tags/*/bookmarks",
+                  "*://www.archiveofourown.org/tags/*/bookmarks"],
+      "css": ["tooo.css"],
+      "js": ["jquery.min.js",
+             "selector_to_name.js",
+             "util.js",
+             "content_scripts/browse.js"]
     }
   ],
   "default_locale": "zh_TW",

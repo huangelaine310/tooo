@@ -1,0 +1,174 @@
+#main
+  div
+    ul.user.navigation.actions
+      li
+        span #main > div.navigation.actions.module > ul > li:nth-child(1) > span (Works)
+      li
+        a #main > div.navigation.actions.module > ul > li:nth-child(2) > a (Bookmarks)
+      li
+        form
+          input[value='Favorite Tags'] (Favorite Tag)
+  form#work-filters
+    fieldset
+      dl
+        dt
+        dd.submit.actions
+          input[value='Sort and Filter'] (Sort and Filter)
+        dt.sort
+          label[for='work_search_sort_column']
+        dd.sort
+        dt.include.heading
+          h4.heading (Include)
+        dd.include.tags.group
+          dl
+            dt#toggle_include_rating_tags
+              button (Ratings)
+            dd#include_rating_tags
+              ul
+                li
+                  label
+                    span #include_rating_tags > ul > li:nth-child(1) > label > span:nth-child(3) (Teen And Up Audiences (<var>))
+                li
+                  label
+                    span #include_rating_tags > ul > li:nth-child(2) > label > span:nth-child(3) (General Audiences (<var>))
+                li
+                  label
+                    span #include_rating_tags > ul > li:nth-child(3) > label > span:nth-child(3) (Explicit (<var>))
+                li
+                  label
+                    span #include_rating_tags > ul > li:nth-child(4) > label > span:nth-child(3) (Mature (<var>))
+                li
+                  label
+                    span #include_rating_tags > ul > li:nth-child(5) > label > span:nth-child(3) (Not Rated (<var>))
+            dt#toggle_include_archive_warning_tags
+              button (Warnings)
+            dd#iclude_archive_warning_tags
+              ul
+                #include_archive_warning_tags > ul > li:nth-child(1) > label > span:nth-child(3) (No Archive Warnings Apply)
+                #include_archive_warning_tags > ul > li:nth-child(2) > label > span:nth-child(3) (Creator Chose Not To Use Archive Warnings)
+                #include_archive_warning_tags > ul > li:nth-child(3) > label > span:nth-child(3) (Graphic Depictions Of Violence)
+                #include_archive_warning_tags > ul > li:nth-child(4) > label > span:nth-child(3) (Major Character Death)
+                #include_archive_warning_tags > ul > li:nth-child(5) > label > span:nth-child(3) (Underage)
+                #include_archive_warning_tags > ul > li:nth-child(6) > label > span:nth-child(3) (Rape/Non-Con)
+            dt#toggle_include_category_tags
+              button (Categories)
+            dd#include_category_tags
+              ul
+                #include_category_tags > ul > li:nth-child(1) > label > span:nth-child(3) (M/M)
+                #include_category_tags > ul > li:nth-child(2) > label > span:nth-child(3) (F/M)
+                #include_category_tags > ul > li:nth-child(3) > label > span:nth-child(3) (Gen)
+                #include_category_tags > ul > li:nth-child(4) > label > span:nth-child(3) (Multi)
+                #include_category_tags > ul > li:nth-child(5) > label > span:nth-child(3) (F/F)
+                #include_category_tags > ul > li:nth-child(6) > label > span:nth-child(3) (Other)
+            dt#toggle_include_fandom_tags
+              button (Fandoms)
+            dd#include_fandom_tags
+              ul
+            dt#toggle_include_character_tags
+              button (Characters)
+            dd#include_character_tags
+              ul
+            dt#toggle_include_relationship_tags
+              button (Relationships)
+            dd#include_relationship_tags
+              ul
+            dt#toggle_include_freeform_tags
+              button (Additional Tags)
+            dd#include_freeform_tags
+              ul
+            dt.autocomplete.search
+              label[for='work_search_other_tag_names_autocomplete'] (Other tags to include)
+        dt.exclude.heading
+          h4.heading (Exclude)
+        dd.exclude.tags.group
+          dl
+            dt#toggle_exclude_rating_tags
+              button (Ratings)
+            dd#exclude_rating_tags
+              ul
+                li
+                  label
+                    span #exclude_rating_tags > ul > li:nth-child(1) > label > span:nth-child(3) (Teen And Up Audiences (<var>))
+                li
+                  label
+                    span #exclude_rating_tags > ul > li:nth-child(2) > label > span:nth-child(3) (General Audiences (<var>))
+                li
+                  label
+                    span #exclude_rating_tags > ul > li:nth-child(3) > label > span:nth-child(3) (Explicit (<var>))
+                li
+                  label
+                    span #exclude_rating_tags > ul > li:nth-child(4) > label > span:nth-child(3) (Mature (<var>))
+                li
+                  label
+                    span #exclude_rating_tags > ul > li:nth-child(5) > label > span:nth-child(3) (Not Rated (<var>))
+            dt#toggle_exclude_archive_warning_tags
+              button (Warnings)
+            dd#iclude_archive_warning_tags
+              ul
+                #exclude_archive_warning_tags > ul > li:nth-child(1) > label > span:nth-child(3) (No Archive Warnings Apply)
+                #exclude_archive_warning_tags > ul > li:nth-child(2) > label > span:nth-child(3) (Creator Chose Not To Use Archive Warnings)
+                #exclude_archive_warning_tags > ul > li:nth-child(3) > label > span:nth-child(3) (Graphic Depictions Of Violence)
+                #exclude_archive_warning_tags > ul > li:nth-child(4) > label > span:nth-child(3) (Major Character Death)
+                #exclude_archive_warning_tags > ul > li:nth-child(5) > label > span:nth-child(3) (Underage)
+                #exclude_archive_warning_tags > ul > li:nth-child(6) > label > span:nth-child(3) (Rape/Non-Con)
+            dt#toggle_exclude_category_tags
+              button (Categories)
+            dd#exclude_category_tags
+              ul
+                #exclude_category_tags > ul > li:nth-child(1) > label > span:nth-child(3) (M/M)
+                #exclude_category_tags > ul > li:nth-child(2) > label > span:nth-child(3) (F/M)
+                #exclude_category_tags > ul > li:nth-child(3) > label > span:nth-child(3) (Gen)
+                #exclude_category_tags > ul > li:nth-child(4) > label > span:nth-child(3) (Multi)
+                #exclude_category_tags > ul > li:nth-child(5) > label > span:nth-child(3) (F/F)
+                #exclude_category_tags > ul > li:nth-child(6) > label > span:nth-child(3) (Other)
+            dt#toggle_exclude_fandom_tags
+              button (Fandoms)
+            dd#exclude_fandom_tags
+              ul
+            dt#toggle_exclude_character_tags
+              button (Characters)
+            dd#exclude_character_tags
+              ul
+            dt#toggle_exclude_relationship_tags
+              button (Relationships)
+            dd#exclude_relationship_tags
+              ul
+            dt#toggle_exclude_freeform_tags
+              button (Additional Tags)
+            dd#exclude_freeform_tags
+              ul
+            dt.autocomplete.search
+              label[for='work_search_excluded_tag_names_autocomplete'] (Other tags to exclude)
+        dt.more.heading
+          h4.heading (More Options)
+        dd.more.group
+          dl
+            dt#toggle_work_crossover
+              button (Crossovers)
+            dd#work_crossover
+            dt#toggle_work_complete
+              button (Completion Status)
+            dd#work_complete
+            dt#toggle_work_words
+              button (Word Count)
+            dd#work_words
+              dl.range
+                dt
+                  label[for='work_search_words_from'] (From)
+                dd
+                dt
+                  label[for='work_search_words_to'] (To)
+            dt#toggle_work_dates
+              button (Date Updated)
+            dd#work_dates
+              dl.range
+                dt
+                  label[for='work_search_date_from'] (From)
+                dd
+                dt
+                  label[for='work_search_date_to'] (To)
+                dd
+
+        dt.landmark
+        dd.submit.actions
+          input[value='Sort and Filter']
