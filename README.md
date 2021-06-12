@@ -60,4 +60,5 @@ Add your new content script in `manifest.json`. Please refer to previos examples
 
 
 ## Updates
+- June 12, 2021 - Supports 3 different modes of translation. Supports Search Work and Browse Tags Sort and Filter Page to zh_TW.
 - May 29, 2021 - Supports translation of Post New Work and Post New Chapter pages to zh_TW.
