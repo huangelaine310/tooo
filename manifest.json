@@ -1,9 +1,18 @@
 {
   "name": "TOOO",
   "description": "Translators of Our Own",
-  "version": "2.0",
+  "version": "2.1",
   "manifest_version": 3,
   "content_scripts": [
+    {
+      "matches": ["*://archiveofourown.org/*",
+                  "*://www.archiveofourown.org/*"],
+      "css": ["tooo.css"],
+      "js": ["jquery.min.js",
+             "selector_to_name.js",
+             "util.js",
+             "content_scripts/general.js"]
+    },
     {
       "matches": ["*://archiveofourown.org/works/new",
                   "*://www.archiveofourown.org/works/new"],

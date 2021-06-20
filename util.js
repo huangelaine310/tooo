@@ -94,12 +94,15 @@ function dragElement(elmnt) {
 
 /** Add sticky box to show translation. */
 function addStickyDragBox(selectors, select_selectors) {
-  // create sticky box
-  let box = $('<div>', {id: 'sticky_box'});
-  let box_text = $('<div>', {id: 'sticky_box_text'});
-  box.append(box_text);
-  $('#main').append(box);
-  dragElement(document.getElementById('sticky_box'));
+  // check if sticky box already exists.
+  if ($('#sticky_box').length <= 0) {
+    // create sticky box
+    let box = $('<div>', {id: 'sticky_box'});
+    let box_text = $('<div>', {id: 'sticky_box_text'});
+    box.append(box_text);
+    $('#main').append(box);
+    dragElement(document.getElementById('sticky_box'));
+  }
 
   // for html select elements, must include size for hover to work.
   for (const [selector, size] of Object.entries(select_selectors)) {
@@ -114,11 +117,11 @@ function addStickyDragBox(selectors, select_selectors) {
     $(selector).hover(
       () => {
         // hover mouse in
-        box_text.html(getMessage(selector));
+        $('#sticky_box_text').html(getMessage(selector));
       },
       () => {
         // hover mouse out
-        box_text.empty();
+        $('#sticky_box_text').empty();
       }
     );
   }

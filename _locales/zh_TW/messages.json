@@ -594,5 +594,121 @@
   "filters": {
     "message": "篩選",
     "description": "#go_to_filters| Filters"
+  },
+  "my_dashboard": {
+    "message": "我的帳戶",
+    "description": "#greeting > ul > li:nth-child(1) > ul > li:nth-child(1) > span| My Dashboard"
+  },
+  "subscriptions": {
+    "message": "我的訂閱",
+    "description": "#greeting > ul > li:nth-child(1) > ul > li:nth-child(2) > a| Subscriptions"
+  },
+  "my_works": {
+    "message": "我的作品",
+    "description": "#greeting > ul > li:nth-child(1) > ul > li:nth-child(3) > a| My Works"
+  },
+  "my_bookmarks": {
+    "message": "我的書籤",
+    "description": "#greeting > ul > li:nth-child(1) > ul > li:nth-child(4) > a| My Bookmarks"
+  },
+  "my_history": {
+    "message": "歷史記錄",
+    "description": "#greeting > ul > li:nth-child(1) > ul > li:nth-child(5) > a| My History"
+  },
+  "my_preferences": {
+    "message": "偏好設定",
+    "description": "#greeting > ul > li:nth-child(1) > ul > li:nth-child(6) > a| My Preferences"
+  },
+  "new_work": {
+    "message": "新作品",
+    "description": "#greeting > ul > li:nth-child(2) > ul > li:nth-child(1) > a| New Work"
+  },
+  "import_work": {
+    "message": "搬運作品",
+    "description": "#greeting > ul > li:nth-child(2) > ul > li:nth-child(2) > a| Import Work"
+  },
+  "log_out": {
+    "message": "登出",
+    "description": "#greeting > ul > li:nth-child(3) > a| Log Out"
+  },
+  "all_fandoms": {
+    "message": "所有同人圈",
+    "description": "#header > ul > li:nth-child(1) > ul > li:nth-child(1) > a| All Fandoms"
+  },
+  "anime_and_manga": {
+    "message": "動畫與漫畫",
+    "description": "#medium_5 > a| Anime & Manga"
+  },
+  "books_and_literature": {
+    "message": "書籍與文學",
+    "description": "#medium_3 > a| Books & Literature"
+  },
+  "cartoons_and_comics_and_graphic_novels": {
+    "message": "卡通與圖文小說",
+    "description": "#medium_4 > a| Cartoons & Comics & Graphic Novels"
+  },
+  "celebrities_and_real_people": {
+    "message": "明星與真人同人",
+    "description": "#medium_7 > a| Celebrities & Real People"
+  },
+  "movies": {
+    "message": "電影",
+    "description": "#medium_2 > a| Movies"
+  },
+  "music_and_bands": {
+    "message": "音樂與樂團",
+    "description": "#medium_6 > a| Music & Bands"
+  },
+  "other_media": {
+    "message": "其他媒體",
+    "description": "#medium_8 > a| Other Media"
+  },
+  "theater": {
+    "message": "舞台劇",
+    "description": "#medium_30198 > a| Theater"
+  },
+  "tv_shows": {
+    "message": "電視劇",
+    "description": "#medium_1 > a| TV Shows"
+  },
+  "video_games": {
+    "message": "電玩遊戲",
+    "description": "#medium_476 > a| Video Games"
+  },
+  "uncategorized_fandoms": {
+    "message": "未分類同人圈",
+    "description": "#medium_9971 > a| Uncategorized Fandoms"
+  },
+  "browse": {
+    "message": "瀏覽",
+    "description": "#header > ul > li:nth-child(2) > a| Browse"
+  },
+  "collections": {
+    "message": "作品集",
+    "description": "#header > ul > li:nth-child(2) > ul > li:nth-child(4) > a| Collections"
+  },
+  "people": {
+    "message": "使用者",
+    "description": "#header > ul > li:nth-child(3) > ul > li:nth-child(4) > a| People"
+  },
+  "about": {
+    "message": "關於",
+    "description": "#header > ul > li:nth-child(4) > a| About"
+  },
+  "about_us": {
+    "message": "關於我們",
+    "description": "#header > ul > li:nth-child(4) > ul > li:nth-child(1) > a| About Us"
+  },
+  "news": {
+    "message": "最新消息",
+    "description": "#header > ul > li:nth-child(4) > ul > li:nth-child(2) > a| News"
+  },
+  "warngling_guidelines": {
+    "message": "標籤管理規範",
+    "description": "#header > ul > li:nth-child(4) > ul > li:nth-child(4) > a| Wrangling Guidelines"
+  },
+  "donate_or_volunteer": {
+    "message": "捐贈或貢獻",
+    "description": "#header > ul > li:nth-child(4) > ul > li:nth-child(5) > a| Donate or Volunteer"
   }
 }
