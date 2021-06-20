@@ -191,9 +191,13 @@
     "message": "此作品是原作的翻譯版本",
     "description": "label[for='work_parent_attributes_translation']| This is a translation"
   },
-  "series": {
+  "part_of_series": {
     "message": "此作品屬於某系列的一部分",
     "description": "label[for='series-options-show']| This work is part of a series"
+  },
+  "series": {
+    "message": "系列",
+    "description": "|series"
   },
   "series_existing": {
     "message": "從您現有的系列中選擇:",
@@ -710,5 +714,61 @@
   "donate_or_volunteer": {
     "message": "捐贈或貢獻",
     "description": "#header > ul > li:nth-child(4) > ul > li:nth-child(5) > a| Donate or Volunteer"
+  },
+  "dashboard": {
+    "message": "帳戶總覽",
+    "description": "#dashboard > ul:nth-child(2) > li:nth-child(1) > span| Dashboard"
+  },
+  "profile": {
+    "message": "個人資料",
+    "description": "#dashboard > ul:nth-child(2) > li:nth-child(2) > a| Profile"
+  },
+  "skins": {
+    "message": "介面",
+    "description": "#dashboard > ul:nth-child(2) > li:nth-child(4) > a| Skins"
+  },
+  "statistics": {
+    "message": "統計資料",
+    "description": "#dashboard > ul:nth-child(6) > li:nth-child(2) > a| Statistics"
+  },
+  "post_new": {
+    "message": "發表新作",
+    "description": "#main > div.user.home > div.primary.header.module > ul > li:nth-child(1) > a| Post New"
+  },
+  "edit_works": {
+    "message": "編輯作品",
+    "description": "#main > div.user.home > div.primary.header.module > ul > li:nth-child(2) > a| Edit Works"
+  },
+  "invitations": {
+    "message": "邀請",
+    "description": "#main > div.user.home > div.primary.header.module > ul > li:nth-child(4) > a| Invitations"
+  },
+  "drafts": {
+    "message": "草稿",
+    "description": "#dashboard > ul:nth-child(4) > li:nth-child(2) > a| Drafts"
+  },
+  "inbox": {
+    "message": "收件區",
+    "description": "#dashboard > ul:nth-child(6) > li:nth-child(1) > a| Inbox"
+  },
+  "sign_ups": {
+    "message": "挑戰賽登記",
+    "description": "#dashboard > ul:nth-child(8) > li:nth-child(1) > a| Sign-ups"
+  },
+  "assignments": {
+    "message": "被分配任務",
+    "description": "#dashboard > ul:nth-child(8) > li:nth-child(2) > a| Assignments"
+  },
+  "claims": {
+    "message": "已認領任務",
+    "description": "#dashboard > ul:nth-child(8) > li:nth-child(3) > a| Claims"
+  },
+  "related_works": {
+    "message": "相關作品",
+    "description": "#dashboard > ul:nth-child(8) > li:nth-child(4) > a| Related Works"
+  },
+  "gifts": {
+    "message": "禮物",
+    "description": "#dashboard > ul:nth-child(8) > li:nth-child(5) > a| Gifts"
   }
 }

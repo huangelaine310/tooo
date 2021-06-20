@@ -1,0 +1,39 @@
+#dashboard > ul:nth-child(2) > li:nth-child(1) > span|dashboard|Dashboard|帳戶總覽
+#dashboard > ul:nth-child(2) > li:nth-child(1) > a|dashboard
+#dashboard > ul:nth-child(2) > li:nth-child(2) > a|profile|Profile|個人資料
+#dashboard > ul:nth-child(2) > li:nth-child(2) > span|profile
+#dashboard > ul:nth-child(2) > li:nth-child(3) > a|my_preferences
+#dashboard > ul:nth-child(2) > li:nth-child(3) > span|my_preferences
+#dashboard > ul:nth-child(2) > li:nth-child(4) > a|skins|Skins|介面
+#dashboard > ul:nth-child(2) > li:nth-child(4) > span|skins
+#dashboard > ul:nth-child(4) > li:nth-child(1) > a|works
+#dashboard > ul:nth-child(4) > li:nth-child(1) > span|works
+#dashboard > ul:nth-child(4) > li:nth-child(2) > a|drafts|Drafts|草稿
+#dashboard > ul:nth-child(4) > li:nth-child(2) > span|drafts
+#dashboard > ul:nth-child(4) > li:nth-child(3) > a|series|Series|系列
+#dashboard > ul:nth-child(4) > li:nth-child(3) > span|series
+#dashboard > ul:nth-child(4) > li:nth-child(4) > a|bookmarks
+#dashboard > ul:nth-child(4) > li:nth-child(4) > span|bookmarks
+#dashboard > ul:nth-child(4) > li:nth-child(5) > a|collections
+#dashboard > ul:nth-child(4) > li:nth-child(5) > span|collections
+#dashboard > ul:nth-child(6) > li:nth-child(1) > a|inbox|Inbox|收件區
+#dashboard > ul:nth-child(6) > li:nth-child(1) > span|inbox
+#dashboard > ul:nth-child(6) > li:nth-child(2) > a|statistics|Statistics|統計資料
+#dashboard > ul:nth-child(6) > li:nth-child(2) > span|statistics
+#dashboard > ul:nth-child(6) > li:nth-child(3) > a|my_history
+#dashboard > ul:nth-child(6) > li:nth-child(3) > span|my_history
+#dashboard > ul:nth-child(6) > li:nth-child(4) > a|subscriptions
+#dashboard > ul:nth-child(6) > li:nth-child(4) > span|subscriptions
+#dashboard > ul:nth-child(8) > li:nth-child(1) > a|sign_ups|Sign-ups|挑戰賽登記
+#dashboard > ul:nth-child(8) > li:nth-child(1) > span|sign_ups
+#dashboard > ul:nth-child(8) > li:nth-child(2) > a|assignments|Assignments|被分配任務
+#dashboard > ul:nth-child(8) > li:nth-child(2) > span|assignments
+#dashboard > ul:nth-child(8) > li:nth-child(3) > a|claims|Claims|已認領任務
+#dashboard > ul:nth-child(8) > li:nth-child(3) > span|claims
+#dashboard > ul:nth-child(8) > li:nth-child(4) > a|related_works|Related Works|相關作品
+#dashboard > ul:nth-child(8) > li:nth-child(4) > span|related_works
+#dashboard > ul:nth-child(8) > li:nth-child(5) > a|gifts|Gifts|禮物
+#dashboard > ul:nth-child(8) > li:nth-child(5) > span|gifts
+#main > div.user.home > div.primary.header.module > ul > li:nth-child(1) > a|post_new|Post New|發表新作
+#main > div.user.home > div.primary.header.module > ul > li:nth-child(2) > a|edit_works|Edit Works|編輯作品
+#main > div.user.home > div.primary.header.module > ul > li:nth-child(4) > a|invitations|Invitations|邀請
